@@ -1,0 +1,16 @@
+.icon-list{
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-list p{
+  color: white;
+  text-decoration: none;
+}
+
+.linkedin-img, .github-img, .resume-img, .ig-img{
+  width: 3rem;
+  height: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}

@@ -1,8 +1,14 @@
 .App {
+  font-family: inter;
   text-align: center;
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.snap-container {
+  position: relative;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  overscroll-behavior-y: contain;
+  height: 100vh;
+  width: 100%;
 }
