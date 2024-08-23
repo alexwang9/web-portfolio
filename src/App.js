@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import Main from './components/Main';
 import Contact from './components/Contact';
 import Experience from './components/Experience';
-import umichLogo from "./images/umich-logo.png";
+import umichLogo from './images/umich-logo.png';
 
 function App() {
   const bottomText1 = "College Student\nEntrepreneur\nAspiring Software Engineer";
