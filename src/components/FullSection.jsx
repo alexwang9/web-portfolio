@@ -15,7 +15,6 @@ const FullSection = ({ children, id, isLast, backgroundColor }) => {
       {children}
       {!isLast && (
         <button onClick={handleScroll} className="down-arrow">
-          down
         </button>
       )}
     </div>

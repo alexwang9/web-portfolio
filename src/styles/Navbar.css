@@ -8,6 +8,7 @@
   width: 100%;
   top: 0;
   left: 0;
+  right: 0;
   z-index: 1000;
 }
 
@@ -29,12 +30,11 @@
 }
 
 .navbar-links a {
-  color: #B2AC88;
+  color: white;
   text-decoration: none;
   font-size: 1rem;
-  transition: color 0.3s;
 }
 
 .navbar-links a:hover {
-  color: #ddd;
+  text-decoration: bold;
 }

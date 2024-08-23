@@ -6,7 +6,9 @@
   align-items: center;
   position: relative;
   scroll-snap-align: center;
-  gap: 10rem;
+  gap: 5rem;
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
 
 .down-arrow {
