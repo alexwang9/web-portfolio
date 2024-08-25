@@ -11,6 +11,22 @@
   padding-right: 10vw;
 }
 
+/* Adjust padding for smaller screens */
+@media (max-width: 768px) {
+  .full-section {
+    padding-left: 5vw; /* Adjust padding for smaller screens */
+    padding-right: 5vw; /* Adjust padding for smaller screens */
+  }
+}
+
+/* Further adjust padding for very small screens */
+@media (max-width: 480px) {
+  .full-section {
+    padding-left: 2vw; /* Adjust padding for very small screens */
+    padding-right: 2vw; /* Adjust padding for very small screens */
+  }
+}
+
 .down-arrow {
   position: absolute;
   bottom: 20px;

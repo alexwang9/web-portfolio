@@ -14,3 +14,19 @@
   margin-top: 15px;
   margin-bottom: 15px;
 }
+
+/* Initially hide the elements */
+.hidden {
+  opacity: 0; /* Make the element invisible */
+  transition: opacity 0.5s; /* Set transition for the opacity */
+  visibility: hidden; /* Ensure it is not visible in the document flow */
+}
+
+/* Fade-in effect on hover */
+.linkedin-img:hover + .hidden,
+.github-img:hover + .hidden,
+.resume-img:hover + .hidden,
+.ig-img:hover + .hidden {
+  opacity: 1; /* Make the element visible */
+  visibility: visible; /* Make the element visible in the document flow */
+}

@@ -1,11 +1,15 @@
 .container{
-  background-color: rgb(195,195,195, 20%);
+  background-color: rgba(128, 133, 183, 0.2);
   display: grid;
   border-radius: 15px;
   margin-bottom: 10px;
 
   grid-template-columns: 2fr 3fr;
   grid-template-rows: 1fr 2fr;
+}
+
+.container:hover{
+  background-color: rgb(195,195,195, 25%);
 }
 
 .dates{

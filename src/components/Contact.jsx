@@ -10,19 +10,19 @@ const Contact = () => {
     <div className="icon-list">
       <a href="https://www.linkedin.com/in/alexscwang/" target="_blank" rel="noopener noreferrer" style={{ display: "flex", flexDirection: "row", gap: "1rem", alignItems: "center"}}>
         <img src={linkedin} alt="linkedin" className="linkedin-img"/>
-        <p>linkedin</p>
+        <p className="hidden">linkedin</p>
       </a>
       <a href="https://github.com/alexwang9" target="_blank" rel="noopener noreferrer" style={{ display: "flex", flexDirection: "row", gap: "1rem", alignItems: "center"}}>
         <img src={github} alt="github" className="github-img"/>
-        <p>github</p>
+        <p className="hidden">github</p>
       </a>
       <a href="https://drive.google.com/file/d/1LNI5CZ9rIJwjkq43XmJvuMoyhVMYSF7v/view?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ display: "flex", flexDirection: "row", gap: "1rem", alignItems: "center"}}>
         <img src={resume} alt="resume" className="resume-img"/>
-        <p>resume</p>
+        <p className="hidden">resume</p>
       </a>
       <a href="https://www.instagram.com/_alexwang/" target="_blank" rel="noopener noreferrer" style={{ display: "flex", flexDirection: "row", gap: "1rem", alignItems: "center"}}>
         <img src={ig} alt="ig" className="ig-img"/>
-        <p>instagram</p>
+        <p className="hidden">instagram</p>
       </a>
     </div>
   );

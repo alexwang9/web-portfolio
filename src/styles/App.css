@@ -22,4 +22,22 @@
   font-size: 16px;
   color: white;
   padding-top: 10px;
+  padding-right: 5px;
+  text-decoration: none;
+}
+
+.hidden{
+  font-size: 16px;
+  color: white;
+  padding-top: 13px;
+  padding-right: 5px;
+}
+
+.link-text:hover{
+  text-decoration: underline;
+}
+
+.link-text:hover + .hidden{
+  opacity: 1; /* Make the element visible */
+  visibility: visible; /* Make the element visible in the document flow */
 }
