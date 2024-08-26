@@ -64,7 +64,7 @@ function App() {
             <Experience date1="April 2024" date2="Present" title="Co-Founder & COO • Collage" description={workDesc1} link={"https://collage-dev-main-qwesafadkupck.herokuapp.com/"}/>
             <Experience date1="May 2024" date2="July 2024" title="Accelerate Summer Program • IBM" description={workDesc2} link={"https://www.ibm.com/blogs/jobs/career-ready-skills-with-ibm-accelerate-summer-program/"}/>
             <Experience date1="May 2023" date2="June 2023" title="Product Management Intern • Extend Enterprises" description={workDesc3} link={"https://www.paywithextend.com/"}/>
-            <div>
+            <div className="resume-link">
               <a href="https://drive.google.com/file/d/1LNI5CZ9rIJwjkq43XmJvuMoyhVMYSF7v/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="link-text">View Full Resume
               </a>
               <a href="https://drive.google.com/file/d/1LNI5CZ9rIJwjkq43XmJvuMoyhVMYSF7v/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="hidden">
@@ -82,7 +82,7 @@ function App() {
             <Experience date1="April 2024" date2="Present" title="Briefly News • ReactJS, NodeJS, ExpressJS, MongoDB" description={projDesc1} datesColor="#000000" titleColor="#014421" descColor="#000000" link="https://github.com/alexwang9/briefly"/>
             <Experience date1="May 2024" date2="July 2024" title="Pomodoro Timer Chrome Extension • HTML, CSS, JS" description={projDesc2} datesColor="#000000" titleColor="#014421" descColor="#000000" link="https://github.com/alexwang9/pomodoro-timer"/>
             <Experience date1="May 2023" date2="June 2023" title="Movie Reviews Classification Algorithm • TensorFlow" description={projDesc3} datesColor="#000000" titleColor="#014421" descColor="#000000" link="https://colab.research.google.com/drive/16hOG7y1243wF5u8MPBr24noaCXRWc9Jh?usp=sharing"/>
-            <div>
+            <div className="resume-link">
               <a href="https://drive.google.com/file/d/1LNI5CZ9rIJwjkq43XmJvuMoyhVMYSF7v/view?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ color: "#014421" }} className="link-text">View Full Resume
               </a>
               <a href="https://drive.google.com/file/d/1LNI5CZ9rIJwjkq43XmJvuMoyhVMYSF7v/view?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ color: "#014421" }} className="hidden">

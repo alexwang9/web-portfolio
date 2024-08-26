@@ -35,6 +35,25 @@
   color: rgb(255, 255, 255, 70%);
   justify-self: start;
   padding-bottom: 15px;
+  padding-right: 15px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0.8rem;
+  }
+
+  .dates {
+    font-size: 0.7rem;
+  }
+
+  .title {
+    font-size: 0.9rem;
+  }
+
+  .description {
+    font-size: 0.8rem;
+  }
 }
 
 .down-arrow{
