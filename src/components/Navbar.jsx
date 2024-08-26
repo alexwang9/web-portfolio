@@ -11,9 +11,8 @@ const Navbar = () => {
     }
   };
 
-  
   return (
-    <nav className="navbar">
+    <nav className={"navbar"}>
       <div className="navbar-logo">
         <a href="#section-1" onClick={(e) => handleSmoothScroll(e, 'section-1')}>AW</a>
       </div>

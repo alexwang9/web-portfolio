@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import './styles/App.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import FullSection from './components/FullSection';
@@ -9,7 +9,6 @@ import Experience from './components/Experience';
 import umichLogo from './images/umich-logo.png';
 
 function App() {
-  const [showNavbar, setShowNavbar] = useState(true);
 
   const bottomText1 = "College Student\nEntrepreneur\nAspiring Software Engineer";
   const bottomText2 = "Pursuing a dual degree in Business and Computer Science. On campus, you can find me working at CLAWS or at a Sigma Eta Pi event!";
@@ -25,28 +24,10 @@ function App() {
   const projDesc2 = "Built a Pomodoro timer Chrome extension to provide users with a customizable work and break interval experience using Google Chrome's storage and runtime APIs to automatically update and retrieve timer data in real time.";
   const projDesc3 = "Wrote a program to classify movie reviews as positive, negative, or neutral in Google Colab. Executed data transformation on CSV file of reviews, then created sequential neural network model using three dense and three dropout layers.";
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      const firstSectionHeight = document.getElementById('section-1').offsetHeight;
-
-      if(scrollPosition < firstSectionHeight) {
-        setShowNavbar(true);
-      } else {
-        setShowNavbar(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
 
   return (
     <div className="App"> 
-      {showNavbar && <Navbar/>}
+      <Navbar/>
       <div className="snap-container">
         <FullSection id="section-1" backgroundColor="#014421">
           <Main topText="Hi, my name is" middleText="Alex Wang" bottomText={bottomText1} topTextColor="#B2AC88" middleTextColor="#FFFFFF" bottomTextColor="#8A9A5B" className="left-object"/>

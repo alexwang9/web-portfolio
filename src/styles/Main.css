@@ -17,5 +17,23 @@
   font-size: 1.2rem;
 }
 
+@media (max-width: 1300px) {
+  .top-text {
+    font-size: 0.9rem;
+  }
+  .middle-text {
+    font-size: 2.8rem;
+  }
+  .bottom-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-container{
+    gap: 1rem;
+  }
+}
+
 
 
