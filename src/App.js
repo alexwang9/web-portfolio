@@ -7,6 +7,7 @@ import Main from './components/Main';
 import Contact from './components/Contact';
 import Experience from './components/Experience';
 import umichLogo from './images/umich-logo.png';
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
 
   return (
     <div className="App"> 
+      <Analytics />
       <Navbar/>
       <div className="snap-container">
         <FullSection id="section-1" backgroundColor="#014421">
