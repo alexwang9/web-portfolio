@@ -73,6 +73,8 @@ const Navbar = () => {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="md:hidden text-stone-700 hover:text-stone-900 transition-colors"
             aria-label="Toggle menu"
+            aria-expanded={isMobileMenuOpen}
+            aria-controls="mobile-menu"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -80,7 +82,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden mt-4 py-2 bg-stone-50 border border-stone-200 rounded-lg">
+          <div id="mobile-menu" className="md:hidden mt-4 py-2 bg-stone-50 border border-stone-200 rounded-lg">
             {navItems.map((item) => (
               <button
                 key={item.href}

@@ -2,6 +2,14 @@ import React from 'react';
 import { ArrowDown } from 'lucide-react';
 import TypewriterText from './TypewriterText';
 
+const TYPEWRITER_PHRASES = [
+  'software engineer',
+  'tennis player',
+  'formula one fan',
+  'show/movie connoisseur',
+  'world traveler',
+];
+
 const Hero = () => {
   const scrollTo = (selector) => {
     const element = document.querySelector(selector);
@@ -24,13 +32,7 @@ const Hero = () => {
 
           <h2 className="text-xl md:text-2xl text-stone-500 font-light mb-8">
             <TypewriterText
-              phrases={[
-                'software engineer',
-                'tennis player',
-                'formula one fan',
-                'show/movie connoisseur',
-                'world traveler',
-              ]}
+              phrases={TYPEWRITER_PHRASES}
               className="text-accent-700 font-normal"
               speed={80}
               deleteSpeed={40}

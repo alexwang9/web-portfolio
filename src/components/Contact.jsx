@@ -50,7 +50,7 @@ const Contact = () => {
                 key={link.label}
                 href={link.href}
                 target={link.href.startsWith('mailto:') ? undefined : '_blank'}
-                rel="noopener noreferrer"
+                rel={link.href.startsWith('mailto:') ? undefined : 'noopener noreferrer'}
                 aria-label={link.label}
                 className="text-stone-400 hover:text-stone-900 transition-colors duration-200"
               >
