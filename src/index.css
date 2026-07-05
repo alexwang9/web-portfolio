@@ -6,31 +6,40 @@
   html {
     scroll-behavior: smooth;
   }
-  
+
   body {
+    @apply bg-stone-50 text-stone-800 antialiased;
     font-family: 'Inter', system-ui, sans-serif;
     line-height: 1.6;
+  }
+
+  ::selection {
+    @apply bg-stone-900 text-stone-50;
   }
 }
 
 @layer components {
   .section-padding {
-    @apply px-4 sm:px-6 lg:px-8 py-20;
+    @apply px-6 sm:px-8 py-24 md:py-32;
   }
-  
-  .container-max {
-    @apply max-w-7xl mx-auto;
+
+  .wrap-narrow {
+    @apply max-w-3xl mx-auto;
   }
-  
-  .gradient-text {
-    @apply bg-gradient-to-r from-primary-600 to-blue-600 bg-clip-text text-transparent;
+
+  .wrap-wide {
+    @apply max-w-5xl mx-auto;
   }
-  
-  .glass-effect {
-    @apply bg-white/10 backdrop-blur-md border border-white/20;
+
+  .section-label {
+    @apply font-mono text-xs uppercase tracking-[0.2em] text-stone-400;
   }
-  
-  .hover-lift {
-    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+
+  .section-heading {
+    @apply font-serif text-3xl md:text-4xl text-stone-900 tracking-tight;
   }
-} 
+
+  .link-quiet {
+    @apply text-stone-900 underline decoration-stone-300 underline-offset-4 transition-colors hover:decoration-accent-600 hover:text-accent-700;
+  }
+}
