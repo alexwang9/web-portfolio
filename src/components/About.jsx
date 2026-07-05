@@ -27,8 +27,8 @@ const About = () => {
           <div className="grid md:grid-cols-5 gap-10">
             <div className="md:col-span-3 space-y-5 text-stone-600 leading-relaxed">
               <p>
-                I'm a dual-degree senior at the University of Michigan studying
-                computer science and business. I like working across the whole
+                I'm a recent graduate from the University of Michigan with
+                a dual degree in computer science and business. I like working across the whole
                 stack — from Spring Boot services and MapReduce pipelines to
                 React consoles and native macOS apps.
               </p>

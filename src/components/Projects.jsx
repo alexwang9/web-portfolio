@@ -4,8 +4,24 @@ import Reveal from './Reveal';
 
 const projects = [
   {
+    title: 'Ledge',
+    period: 'Apr 2026 – Present',
+    description:
+      'Personal finance platform that gives users a clear picture of where their money goes — live at ledgeflux.com.',
+    technologies: ['Next.js', 'TypeScript', 'Prisma', 'Plaid', 'Upstash Redis'],
+    achievements: [
+      'Connects bank accounts via Plaid to automatically ingest and categorize transactions, with dashboards charting spending breakdowns and net savings over time',
+      'Full production stack: NextAuth authentication, Prisma ORM, Upstash Redis rate limiting, and transactional email via Resend',
+    ],
+    links: [
+      { label: 'ledgeflux.com', href: 'https://ledgeflux.com' },
+      { label: 'github', href: 'https://github.com/alexwang9/ledge' },
+    ],
+    featured: true,
+  },
+  {
     title: 'Telepathy',
-    period: 'Nov 2025 – Present',
+    period: 'Nov 2025 – Apr 2026',
     description:
       'Native macOS overlay that indexes Google Drive and Gmail into pgvector-powered embeddings, enabling semantic search and context-aware AI interactions across 20,000+ documents per user.',
     technologies: ['Swift', 'Supabase', 'PostgreSQL + pgvector', 'Claude API'],
@@ -13,38 +29,39 @@ const projects = [
       'Voice profile generation with the Claude API analyzes user writing patterns and auto-injects personalized style guides into AI conversations',
       'Acquired 10 pilot customers and $1,500 in funding through direct outreach and product iteration',
     ],
+    links: [
+      { label: 'github', href: 'https://github.com/alexwang9/telepathy-macos' },
+    ],
+    featured: true,
+  },
+  {
+    title: 'Collage',
+    period: 'Apr 2024 – Apr 2025',
+    description:
+      'Social networking platform for college course selection with personalized recommendations, grown to 750+ users.',
+    technologies: ['Next.js', 'Flask', 'MySQL', 'Stripe'],
+    achievements: [
+      'Scaled to 750+ users within 3 weeks of launch with Google OAuth, a social graph, schedule builder, and activity feed',
+      'Integrated Stripe metered billing in under 3 days while leading a cross-functional team of 10',
+    ],
+    links: [
+      { label: 'github', href: 'https://github.com/collage-us/collage-nextjs' },
+    ],
     featured: true,
   },
   {
     title: 'Distributed Search Engine',
     period: 'Nov 2024',
     description:
-      'Google-style search stack built from scratch: a five-stage MapReduce pipeline that parsed and indexed 150K Wikipedia pages with tf-idf and PageRank.',
+      'Google-style search stack built from scratch: a five-stage MapReduce pipeline that parsed and indexed 150K Wikipedia pages with tf-idf and PageRank, serving top-10 results in <100ms median latency.',
     technologies: ['Python', 'Flask', 'MapReduce'],
-    achievements: [
-      'Exposed shard results through a Flask REST API and multi-threaded aggregator UI',
-      'Delivered top-10 results in <100ms median latency',
-    ],
-    featured: true,
   },
   {
     title: 'SwingSense',
     period: 'May 2024',
     description:
-      'AI-powered tennis swing analysis that processes video footage to provide real-time form feedback using computer vision and machine learning.',
+      'AI-powered tennis swing analysis that processes video footage at ~25 fps on CPU to provide form feedback, with 95% PCK landmark accuracy.',
     technologies: ['Python', 'FastAPI', 'MediaPipe', 'OpenCV'],
-    achievements: [
-      'Optimized pipeline to analyze 30-sec clips in 18s on CPU (~25 fps)',
-      'Maintained 95% PCK landmark accuracy and 0.88 F1 swing-detection reliability',
-    ],
-    featured: true,
-  },
-  {
-    title: 'Collage Platform',
-    period: 'Apr 2024 – Apr 2025',
-    description:
-      'Social networking platform for college course selection with personalized recommendations, grown to 750+ users.',
-    technologies: ['Next.js', 'Flask', 'MySQL', 'Stripe'],
   },
   {
     title: 'Briefly News',
@@ -110,7 +127,7 @@ const Projects = () => {
                     {project.description}
                   </p>
                   <ul className="space-y-2 mb-4">
-                    {project.achievements.map((achievement, index) => (
+                    {(project.achievements ?? []).map((achievement, index) => (
                       <li
                         key={index}
                         className="text-sm text-stone-600 leading-relaxed pl-4 relative before:content-['–'] before:absolute before:left-0 before:text-stone-400 max-w-2xl"
@@ -120,6 +137,21 @@ const Projects = () => {
                     ))}
                   </ul>
                   <TechList technologies={project.technologies} />
+                  {project.links && (
+                    <div className="flex gap-6 mt-4">
+                      {project.links.map((link) => (
+                        <a
+                          key={link.href}
+                          href={link.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="link-quiet inline-flex items-center gap-1 font-mono text-sm"
+                        >
+                          {link.label} <ArrowUpRight size={14} />
+                        </a>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
             </Reveal>

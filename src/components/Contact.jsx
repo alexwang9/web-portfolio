@@ -33,8 +33,8 @@ const Contact = () => {
           <p className="section-label mb-4">05 — contact</p>
           <h2 className="section-heading mb-6">Let's connect</h2>
           <p className="text-stone-600 leading-relaxed max-w-xl mx-auto mb-10">
-            I'm graduating in May 2026 and open to full-time software
-            engineering roles, collaborations, and interesting projects.
+            Always open to interesting projects and conversations — the best
+            way to reach me is email.
           </p>
 
           <a
@@ -67,7 +67,7 @@ const Contact = () => {
             © 2026 Alexander Wang
           </p>
           <p className="font-mono text-xs text-stone-400">
-            ann arbor, mi · built with react &amp; tailwind
+            washington, dc · built with react &amp; tailwind
           </p>
         </div>
       </footer>

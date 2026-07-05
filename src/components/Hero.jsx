@@ -1,12 +1,13 @@
 import React from 'react';
 import { ArrowDown } from 'lucide-react';
 import TypewriterText from './TypewriterText';
+import portrait from '../assets/portrait.jpg';
 
 const TYPEWRITER_PHRASES = [
   'software engineer',
   'tennis player',
   'formula one fan',
-  'show/movie connoisseur',
+  'show/movie enthusiast',
   'world traveler',
 ];
 
@@ -21,9 +22,10 @@ const Hero = () => {
   return (
     <section className="min-h-screen flex items-center pt-16">
       <div className="wrap-wide px-6 sm:px-8 w-full">
-        <div className="max-w-3xl animate-fade-in motion-reduce:animate-none">
+        <div className="flex flex-col-reverse lg:flex-row lg:items-center gap-10 lg:gap-20 animate-fade-in motion-reduce:animate-none">
+        <div className="max-w-3xl flex-1">
           <p className="section-label mb-6">
-            software engineer · ann arbor, mi
+            software engineer · washington, dc
           </p>
 
           <h1 className="font-serif text-5xl md:text-7xl text-stone-900 tracking-tight mb-6">
@@ -41,11 +43,9 @@ const Hero = () => {
           </h2>
 
           <p className="text-lg text-stone-600 leading-relaxed mb-12 max-w-2xl">
-            Computer science &amp; business dual-degree senior at the University of
-            Michigan. Previously at Discover Financial Services — currently
-            building{' '}
-            <span className="font-medium text-stone-900">Telepathy</span>, a
-            semantic search layer for everything on your Mac.
+            Software Engineer at Capital One. Recent graduate from the University of
+            Michigan with Computer Science &amp; Business dual-degree. 
+            Previously at Discover Financial Services.
           </p>
 
           <div className="flex flex-wrap items-center gap-6">
@@ -62,6 +62,13 @@ const Hero = () => {
               see projects <ArrowDown size={16} />
             </button>
           </div>
+        </div>
+
+        <img
+          src={portrait}
+          alt="Alexander Wang"
+          className="w-44 sm:w-52 lg:w-80 aspect-[3/4] object-cover rounded-2xl border border-stone-200 shrink-0"
+        />
         </div>
       </div>
     </section>

@@ -3,13 +3,11 @@ import Reveal from './Reveal';
 
 const workExperience = [
   {
-    title: 'Co-Founder',
-    company: 'Stealth Startup',
-    location: 'Ann Arbor, MI',
-    period: 'May 2025 – Present',
+    title: 'Incoming Software Engineer',
+    company: 'Capital One',
+    location: 'McLean, VA',
+    period: 'Jul 2026 – Present',
     achievements: [
-      'Building AI agent that converts GitHub PR and Salesforce deltas into structured Notion docs via OpenAI & Claude functions',
-      'Conducted 20+ customer discovery calls and landed 1 active design-partner pilot',
     ],
   },
   {
@@ -32,6 +30,7 @@ const workExperience = [
       'Developed end-to-end social networking course selection platform in Next.js and Flask as lead developer and project manager, scaling to 750+ users within 3 weeks of launch',
       'Shipped Google OAuth, social graph, schedule builder, activity feed; integrated Stripe metered billing in under 3 days',
       'Migrated 1000+ lines from React SPA to Next.js 14 App Router, cutting Time-to-First-Byte by 38%; managed a cross-functional team of 10',
+      'Managed a cross-functional team of 10 members over 1 year as a full time college student, coordinating development, design, and deployment to deliver the platform before Fall 2025 course registration',
     ],
   },
   {
@@ -44,47 +43,57 @@ const workExperience = [
       'Incorporated watsonx.ai NLP APIs for sentiment analysis, entity extraction, and summarization; prompt engineering cut hallucination rate by 35% and improved intent classification accuracy by 20%',
     ],
   },
-  {
-    title: 'Coding Instructor',
-    company: 'iD Tech Camps',
-    location: 'Los Angeles, CA',
-    period: 'Jun – Aug 2023',
-    achievements: [
-      'Expanded curriculum materials for 5 courses covering HTML/CSS/JS, web scraping, PyGame, and Git',
-      'Mentored 80+ students with a 70% class-retention rate',
-    ],
-  },
-  {
-    title: 'Product Management Intern',
-    company: 'Extend Enterprises',
-    location: 'New York, NY',
-    period: 'May – Jun 2023',
-    achievements: [
-      'Conducted market research and competitive analysis on 7 commercial payment platforms',
-      'Worked with the platform team for 3 sprints and wrote 20+ user stories for the Shared Budgets feature',
-    ],
-  },
+  // {
+  //   title: 'Coding Instructor',
+  //   company: 'iD Tech Camps',
+  //   location: 'Los Angeles, CA',
+  //   period: 'Jun – Aug 2023',
+  //   achievements: [
+  //     'Expanded upon curriculum materials for 5 different courses tailored to various skill levels, taught topics such as web development with HTML, CSS, and JS, web scraping with Beautiful Soup, PyGame, and version control with Git',
+  //     'Provided individualized guidance and mentorship to camp participants to drive positive feedback from over 80 students and parents in post camp surveys, leading to a 70% class retention rate',
+  //   ],
+  // },
+  // {
+  //   title: 'Product Management Intern',
+  //   company: 'Extend Enterprises',
+  //   location: 'New York, NY',
+  //   period: 'May – Jun 2023',
+  //   achievements: [
+  //     'Conducted market research and competitive analysis on 7 commercial payment platforms in Fintech space, adding 5 new companies into company documentation and developing 2-3 new feature sections',
+  //     'Worked with the platform team for 3 sprints and wrote 20+ user stories for new Shared Budgets platform feature, leading to the successful rollout of the key feature within 4 months',
+  //   ],
+  // },
 ];
 
 const leadershipExperience = [
   {
-    title: 'VP of Professional Development',
-    company: 'Sigma Eta Pi Entrepreneurship Group',
+    title: 'VP of New Member Education',
+    company: 'Sigma Eta Pi Entrepreneurship Fraternity',
     location: 'University of Michigan',
-    period: '2023 – Present',
+    period: 'Jan 2026 – Apr 2026',
+    achievements: [
+      'Designed and led a semester-long entrepreneurship and professional-development curriculum for a 19-member cohort organized into 5 venture teams, spanning problem identification, customer discovery, and solution design',
+      'Launched an inaugural venture studio (SPPS) in which each team validated a startup concept through 12+ customer discovery interviews, built a feature set, competitive map, and business model, and pitched to judges in a capstone competition awarding $750 in prizes',
+    ],
+  },
+  // {
+  //   title: 'Augmented Reality Developer',
+  //   company: 'Collaborative Lab for Advancing Work in Space',
+  //   location: 'University of Michigan',
+  //   period: 'Aug 2023 – Dec 2024',
+  //   achievements: [
+  //     'Developed back-end task-list functionality in C# and Unity for the NASA SUITS challenge submission',
+  //     'Created the DCU AR front-end and UI for mission-critical astronaut information',
+  //   ],
+  // },
+  {
+    title: 'VP of Professional Development',
+    company: 'Sigma Eta Pi Entrepreneurship Fraternity',
+    location: 'University of Michigan',
+    period: 'Jan 2023 – Apr 2023',
     achievements: [
       'Organized 3-day professional trek to Chicago for 70+ members, connecting with 50+ companies across VC, consulting, and tech',
       'Coordinated recruiting and resume-review fair for 22 new members from 5 different fields',
-    ],
-  },
-  {
-    title: 'Augmented Reality Developer',
-    company: 'Collaborative Lab for Advancing Work in Space',
-    location: 'University of Michigan',
-    period: 'Aug 2023 – Present',
-    achievements: [
-      'Developed back-end task-list functionality in C# and Unity for the NASA SUITS challenge submission',
-      'Created the DCU AR front-end and UI for mission-critical astronaut information',
     ],
   },
   {
