@@ -5,10 +5,10 @@ import portrait from '../assets/portrait.jpg';
 
 const TYPEWRITER_PHRASES = [
   'software engineer',
-  'tennis player',
-  'rock climber',
   'lego builder',
   'shot glass collector',
+  'tennis player',
+  'rock climber',
 ];
 
 const Hero = () => {
