@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# Alexander Wang — Personal Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A clean, minimal, responsive personal portfolio built with React, Vite, and Tailwind CSS. It showcases my experience as a Computer Science & Business dual-degree student at the University of Michigan — work experience, projects, technical skills, and leadership.
 
-## Available Scripts
+## Tech Stack
 
-In the project directory, you can run:
+- **Build**: Vite
+- **Frontend**: React 18
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+- **Animations**: CSS transitions + IntersectionObserver scroll reveals
+- **Fonts**: Newsreader, Inter & JetBrains Mono (Google Fonts)
+- **Analytics**: Vercel Analytics
 
-### `npm start`
+## Sections
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Hero** — introduction with typewriter effect
+2. **About** — background, education, certifications, organizations
+3. **Experience** — work and leadership roles
+4. **Projects** — featured and additional projects
+5. **Skills** — categorized technical skills
+6. **Contact** — email and social links
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js v18 or higher
 
-### `npm run build`
+### Development
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm install
+npm run dev
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Production
 
-### `npm run eject`
+```bash
+npm run build    # outputs to dist/
+npm run preview  # serve the production build locally
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Customization
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Design system**: `tailwind.config.js` (palette, fonts) and `src/index.css` (shared component classes)
+- **Content**: `src/components/{About,Experience,Projects,Skills,Contact}.jsx`
+- **Fonts**: loaded in `index.html`
+- **Resume**: replace `public/Alexander_Wang_Resume.pdf`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Contact
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Alexander Wang**
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Email: alxswang@umich.edu
+- LinkedIn: [linkedin.com/in/alexscwang](https://linkedin.com/in/alexscwang)
+- GitHub: [github.com/alexwang9](https://github.com/alexwang9)

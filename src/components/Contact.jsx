@@ -1,30 +1,77 @@
-import React from "react";
-import github from "../images/github-logo.png";
-import ig from "../images/ig-logo.png";
-import linkedin from "../images/linkedin-logo.png";
-import resume from "../images/resume-logo.png";
-import "../styles/Contact.css";
+import React from 'react';
+import { Mail, Linkedin, Github, FileText } from 'lucide-react';
+import Reveal from './Reveal';
+
+const socialLinks = [
+  {
+    icon: <Mail size={20} />,
+    label: 'Email',
+    href: 'mailto:alxswang@umich.edu',
+  },
+  {
+    icon: <Linkedin size={20} />,
+    label: 'LinkedIn',
+    href: 'https://linkedin.com/in/alexscwang',
+  },
+  {
+    icon: <Github size={20} />,
+    label: 'GitHub',
+    href: 'https://github.com/alexwang9',
+  },
+  {
+    icon: <FileText size={20} />,
+    label: 'Resume',
+    href: '/Alexander_Wang_Resume.pdf',
+  },
+];
 
 const Contact = () => {
   return (
-    <div className="icon-list">
-      <a href="https://www.linkedin.com/in/alexscwang/" target="_blank" rel="noopener noreferrer" style={{ display: "flex", flexDirection: "row", gap: "1rem", alignItems: "center"}}>
-        <img src={linkedin} alt="linkedin" className="linkedin-img"/>
-        <p className="hidden">linkedin</p>
-      </a>
-      <a href="https://github.com/alexwang9" target="_blank" rel="noopener noreferrer" style={{ display: "flex", flexDirection: "row", gap: "1rem", alignItems: "center"}}>
-        <img src={github} alt="github" className="github-img"/>
-        <p className="hidden">github</p>
-      </a>
-      <a href="https://drive.google.com/file/d/1LNI5CZ9rIJwjkq43XmJvuMoyhVMYSF7v/view?usp=sharing" target="_blank" rel="noopener noreferrer" style={{ display: "flex", flexDirection: "row", gap: "1rem", alignItems: "center"}}>
-        <img src={resume} alt="resume" className="resume-img"/>
-        <p className="hidden">resume</p>
-      </a>
-      <a href="https://www.instagram.com/_alexwang/" target="_blank" rel="noopener noreferrer" style={{ display: "flex", flexDirection: "row", gap: "1rem", alignItems: "center"}}>
-        <img src={ig} alt="ig" className="ig-img"/>
-        <p className="hidden">instagram</p>
-      </a>
-    </div>
+    <section id="contact" className="section-padding">
+      <div className="wrap-narrow text-center">
+        <Reveal>
+          <p className="section-label mb-4">05 — contact</p>
+          <h2 className="section-heading mb-6">Let's connect</h2>
+          <p className="text-stone-600 leading-relaxed max-w-xl mx-auto mb-10">
+            Always open to interesting projects and conversations — the best
+            way to reach me is email.
+          </p>
+
+          <a
+            href="mailto:alxswang@umich.edu"
+            className="font-serif text-2xl md:text-3xl text-stone-900 underline decoration-stone-300 underline-offset-8 hover:decoration-accent-600 transition-colors"
+          >
+            alxswang@umich.edu
+          </a>
+
+          <div className="flex justify-center gap-6 mt-12">
+            {socialLinks.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                target={link.href.startsWith('mailto:') ? undefined : '_blank'}
+                rel={link.href.startsWith('mailto:') ? undefined : 'noopener noreferrer'}
+                aria-label={link.label}
+                className="text-stone-400 hover:text-stone-900 transition-colors duration-200"
+              >
+                {link.icon}
+              </a>
+            ))}
+          </div>
+        </Reveal>
+      </div>
+
+      <footer className="mt-24 pt-8 border-t border-stone-200">
+        <div className="wrap-wide flex flex-col sm:flex-row justify-between items-center gap-2">
+          <p className="font-mono text-xs text-stone-400">
+            © 2026 Alexander Wang
+          </p>
+          <p className="font-mono text-xs text-stone-400">
+            washington, dc · built with react &amp; tailwind
+          </p>
+        </div>
+      </footer>
+    </section>
   );
 };
 
