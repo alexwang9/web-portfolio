@@ -6,9 +6,9 @@ import portrait from '../assets/portrait.jpg';
 const TYPEWRITER_PHRASES = [
   'software engineer',
   'tennis player',
-  'formula one fan',
-  'show/movie enthusiast',
-  'world traveler',
+  'rock climber',
+  'lego builder',
+  'shot glass collector',
 ];
 
 const Hero = () => {
